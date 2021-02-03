@@ -16,7 +16,7 @@ export async function getStaticPaths() {
         paths: data.items.map((item) => ({
             params: { slug: item.fields.slug },
         })),
-        fallback: true,
+        fallback: false,
     };
 
 }
