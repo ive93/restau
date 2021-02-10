@@ -1,6 +1,7 @@
 import { documentToReactComponents } from '@contentful/rich-text-react-renderer';
 import { BLOCKS, MARKS } from '@contentful/rich-text-types';
-import Image from 'next/image'
+import Image from 'next/image';
+import { Box, Text, UnorderedList } from "@chakra-ui/react";
 
 const client = require('contentful').createClient({
     space: process.env.NEXT_PUBLIC_CONTENTFUL_SPACE_ID,
@@ -40,15 +41,27 @@ export default function Post({ post }) {
 
     return (
     <div>
-        <h1>ee {post.fields.text}</h1>
-        <div>{documentToReactComponents(post.fields.content, {
-            renderNode: {
-                [BLOCKS.EMBEDDED_ASSET]: node =>
-                    <Image src={'https:' + node.data.target.fields.file.url} 
-                    width={node.data.target.fields.file.details.image.width} 
-                    height={node.data.target.fields.file.details.image.height}/>
-            }
-        })}</div>
+    <Box bg="#f4f9f9" p="40px">
+        <Text textAlign="center">
+            <h1>{post.fields.text}</h1>
+            <h1>{post.fields.date}</h1>
+        </Text>
+
+
+            <Box 
+                display="flex" 
+                flexDirection="column" 
+                alignItems="center"
+            >
+            {documentToReactComponents(post.fields.content, {
+                renderNode: {
+                    [BLOCKS.EMBEDDED_ASSET]: node =>
+                        <Image src={'https:' + node.data.target.fields.file.url} 
+                        width={node.data.target.fields.file.details.image.width} 
+                        height={node.data.target.fields.file.details.image.height}/>
+                }
+            })}</Box>
+        </Box>
     </div>
 )
     
