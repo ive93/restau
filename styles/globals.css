@@ -6,7 +6,7 @@ body {
   padding: 0;
   margin: 0;
   background-color: #f4f9f9;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Montserrat-Regular', sans-serif;
 }
 .picture p {
   display: none;
@@ -18,4 +18,13 @@ a {
 
 * {
   box-sizing: border-box;
+}
+
+@font-face {
+  font-family: 'Montserrat-Regular';
+  src: url('../public/fonts/Montserrat-Regular.eot');
+  src: url('../public/fonts/Montserrat-Regular.eot?#iefix') format('embedded-opentype'),
+  url('../public/fonts/Montserrat-Regular.woff2') format('woff2'),
+  url('../public/fonts/Montserrat-Regular.woff') format('woff'),
+  url('../public/fonts/Montserrat-Regular.ttf') format('truetype');
 }

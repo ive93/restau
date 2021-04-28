@@ -35,32 +35,8 @@ export default function Home({posts}) {
         <link rel="icon" href="/favicon.ico"/>
       </Head>
       <main>
-      <Box bg="#161d6f" color="white" fontSize={32} fontFamily='Open Sans' textAlign='center'><h1>Management Blog</h1></Box>
-      <Box bg="#f4f9f9"  display="flex" flexDirection="column" justifyContent="center" p="20px">
-        <ul>
-          {posts.map((post) => (
-            <UnorderedList 
-              textAlign='center' 
-              p="20px" 
-            
-              key={post.sys.id}>
-              <Link href={"posts/" + post.fields.slug}>
-                <a>{post.fields.text}</a>
-              </Link>
 
-              <Box display="flex" justifyContent="center" className="picture">{documentToReactComponents(post.fields.content, {
-            renderNode: {
-                [BLOCKS.EMBEDDED_ASSET]: node =>
-                    <Image objectFit="cover" src={'https:' + node.data.target.fields.file.url} 
-                    width={200} 
-                    height={200}/>
-            }
-        })}</Box>
 
-            </UnorderedList>
-          ))}
-        </ul>
-        </Box>
 
 
 
