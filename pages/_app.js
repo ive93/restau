@@ -1,6 +1,8 @@
 import { ChakraProvider, extendTheme } from "@chakra-ui/react";
 import '../styles/globals.css'
 import Layout from '../components/Layout.js'
+import 'swiper/swiper-bundle.css';
+import 'swiper/swiper-bundle.min.css';
 
 
 
