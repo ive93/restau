@@ -1,28 +1,82 @@
 import {
-  Breadcrumb,
-  BreadcrumbItem,
-  BreadcrumbLink,
-  BreadcrumbSeparator,
-} from "@chakra-ui/react"
-  
+Flex,
+Button,
+Tooltip
+} from "@chakra-ui/react";
+
+
   const Header = () => (
-    <Breadcrumb>
-    <BreadcrumbItem>
-      <BreadcrumbLink href="#">Home</BreadcrumbLink>
-    </BreadcrumbItem>
 
-    <BreadcrumbItem>
-      <BreadcrumbLink href="#">Products</BreadcrumbLink>
-    </BreadcrumbItem>
+<Flex w="100%"
+      justifyContent="space-evenly"
+      alignItems="center"
+      position="fixed"
+      zIndex="1">
+<img src="https://9agdi3buzu824rjcn3d2r89q-wpengine.netdna-ssl.com/wp-content/uploads/2020/09/SMARTGroup-Logo-Blue.png"/>
+  <ul className="top-level-menu">
+      <li className="underline"><a href="/">Home</a></li>
+      <li className="underline">
+          <a href="#">Products</a>
+          <ul className="second-level-menu">
+              <li>
+                  <a href="#">Diode</a>
+                  <ul className="third-level-menu">
+                      <li><a href="#">Intro</a></li>
+                      <li><a href="#">Features & Benefits</a></li>
+                      <li><a href="#">FAQS</a></li>
+                      <li><a href="#">Testimonials</a></li>
+                      <li><a href="#">Revenue</a></li>
+                  </ul>
+              </li>
+              <li>
+                  <a href="#">Juvium</a>
+                  <ul className="third-level-menu">
+                      <li><a href="#">Intro</a></li>
+                      <li><a href="#">Features & Benefits</a></li>
+                      <li><a href="#">FAQS</a></li>
+                      <li><a href="#">Testimonials</a></li>
+                      <li><a href="#">Revenue</a></li>
+                  </ul>
+              </li>
+              <li>
+                  <a href="#">M Tone XL</a>
+                  <ul className="third-level-menu">
+                      <li><a href="#">Intro</a></li>
+                      <li><a href="#">Features & Benefits</a></li>
+                      <li><a href="#">FAQS</a></li>
+                      <li><a href="#">Testimonials</a></li>
+                      <li><a href="#">Revenue</a></li>
+                  </ul>
+              </li>
+              <li>
+                  <a href="#">Multi Lasi</a>
+                  <ul className="third-level-menu">
+                      <li><a href="#">Intro</a></li>
+                      <li><a href="#">Features & Benefits</a></li>
+                      <li><a href="#">FAQS</a></li>
+                      <li><a href="#">Testimonials</a></li>
+                      <li><a href="#">Revenue</a></li>
+                  </ul>
+              </li>
+          </ul>
+      </li>
+      <li className="underline"><a href="#">Finance</a></li>
+      <li className="underline"><a href="/about">About</a></li>
+      <li className="underline"><a href="/news">News</a></li>
+  </ul>
+  <Button bg="#3271B8"
+          size="lg"
+          color="#fff"
+          h="39px"
+          w="148px"
+          borderRadius="3px">
+          <a href="/contact">Enquire Now</a></Button>
 
-    <BreadcrumbItem>
-      <BreadcrumbLink href="#">Finance</BreadcrumbLink>
-    </BreadcrumbItem>
+    <Tooltip hasArrow label="324234" background="#3271B8" color="#fff">
+        <img src="https://smarths.wpengine.com/wp-content/uploads/2020/09/Phone-Icon.png"/>
+    </Tooltip>
 
-    <BreadcrumbItem>
-      <BreadcrumbLink href="#">About</BreadcrumbLink>
-    </BreadcrumbItem>
-  </Breadcrumb>
+</Flex>
   );
   
   export default Header;

@@ -28,3 +28,191 @@ a {
   url('../public/fonts/Montserrat-Regular.woff') format('woff'),
   url('../public/fonts/Montserrat-Regular.ttf') format('truetype');
 }
+
+.third-level-menu
+{
+    position: absolute;
+    top: 0;
+    right: -150px;
+    width: 162px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: none;
+}
+
+.third-level-menu > li
+{
+    height: 30px;
+}
+
+
+.second-level-menu
+{
+    position: absolute;
+    top: 30px;
+    left: 0;
+    width: 150px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: none;
+    z-index: 1;
+}
+
+.second-level-menu > li
+{
+    position: relative;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+
+.top-level-menu
+{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.top-level-menu > li
+{
+    position: relative;
+    float: left;
+    height: 30px;
+    width: 150px;
+    display: flex;
+    justify-content: center;
+ 
+}
+/*.top-level-menu > li:hover { }
+.second-level-menu > li:hover { background: #CCCCCC; }
+.third-level-menu > li:hover { background: #CCCCCC; }*/
+
+.top-level-menu li:hover > ul
+{
+    /* On hover, display the next level's menu */
+    display: inline;
+}
+
+
+/* Menu Link Styles */
+
+.top-level-menu a /* Apply to all links inside the multi-level menu */
+{
+    color: #3271B8;
+    text-decoration: none;
+    padding: 0 0 0 10px;
+
+    /* Make the link cover the entire list item-container */
+    display: block;
+    line-height: 30px;
+}
+
+.underline {
+  position: relative;
+  margin: 3px;
+}
+
+.underline:hover::after{
+  width: 100%;
+}
+
+.underline::after {
+    content: '';
+    position: absolute;
+    left: 0; bottom: -7px;
+    height: 4px;
+    background-color: #fff;
+    width: 0;
+    transition: width .25s;
+  }
+
+  .custom-shape-divider-top-1619625819 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-top-1619625819 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 67px;
+}
+
+.custom-shape-divider-top-1619625819 .shape-fill {
+    fill: #FFFFFF;
+}
+
+.custom-shape-divider-bottom-1619626400 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1619626400 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 67px;
+}
+
+.custom-shape-divider-bottom-1619626400 .shape-fill {
+  fill: #FFFFFF;
+}
+
+.custom-shape-divider-top-1619626794 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.custom-shape-divider-top-1619626794 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 200px;
+}
+
+.custom-shape-divider-top-1619626794 .shape-fill {
+  fill: #FFFFFF;
+}
+
+.swiper-container {
+  width: 100%;
+  height: 100%;
+  max-width: 500px;
+  text-align: center;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}

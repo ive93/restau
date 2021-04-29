@@ -35,11 +35,6 @@ export default function Home({posts}) {
         <link rel="icon" href="/favicon.ico"/>
       </Head>
       <main>
-
-
-
-
-
       </main>
     </div>
   )

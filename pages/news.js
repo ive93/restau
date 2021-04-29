@@ -3,7 +3,10 @@ import Link from 'next/link';
 import { BLOCKS } from '@contentful/rich-text-types';
 import { documentToReactComponents } from '@contentful/rich-text-react-renderer';
 import Image from 'next/image';
-import styles from '../styles/Home.module.css'
+import {
+  Box,
+  Flex
+  } from "@chakra-ui/react";
 
 const client = require('contentful').createClient({
   space: process.env.NEXT_PUBLIC_CONTENTFUL_SPACE_ID,
@@ -29,13 +32,7 @@ export default function Home({posts}) {
 
   return (
     <div>
-      <Head>
-        <title>Next js</title>
-        <link rel="icon" href="/favicon.ico"/>
-      </Head>
-      <main>
-      <div bg="#161d6f" color="white" fontSize={32} fontFamily='Open Sans' textAlign='center'><h1>Management Blog</h1></div>
-      <div bg="#f4f9f9"  display="flex" flexDirection="column" justifyContent="center" p="20px">
+      <Box bg="#f4f9f9"  display="flex" flexDirection="row" justifyContent="center" p="20px">
         <ul>
           {posts.map((post) => (
             <ul 
@@ -59,11 +56,7 @@ export default function Home({posts}) {
             </ul>
           ))}
         </ul>
-        </div>
-
-
-
-      </main>
+        </Box>
     </div>
   )
 }
