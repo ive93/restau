@@ -1,4 +1,5 @@
 import Header from "./Header";
+import Footer from './Footer'
 
 
 const layoutStyle = {
@@ -20,6 +21,7 @@ const Layout = props => (
     <div className="Content" style={contentStyle}>
       {props.children}
     </div>
+    <Footer/>
   </div>
 );
 
