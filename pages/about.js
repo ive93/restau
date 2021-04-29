@@ -6,7 +6,7 @@ import {
     Text,
     Image
     } from "@chakra-ui/react";
-import Swipers from '../components/Carrousel'
+import Carrousel from '../components/Carrousel'
 
   const About = () => (
 <section>
@@ -106,7 +106,7 @@ import Swipers from '../components/Carrousel'
             </svg>
         </div>
     </Flex>
-    <Swipers></Swipers>
+    <Carrousel></Carrousel>
     <Box>
         <Image src="https://9agdi3buzu824rjcn3d2r89q-wpengine.netdna-ssl.com/wp-content/uploads/2020/09/Testimonials-Background.jpg"/>
     </Box>
