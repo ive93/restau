@@ -4,7 +4,8 @@ import {
     Tooltip,
     Box,
     Text,
-    Image
+    Image,
+    AspectRatio
     } from "@chakra-ui/react";
 import Separator from '../components/Separator';
 import { AiFillCheckCircle } from 'react-icons/ai';
@@ -153,81 +154,69 @@ const Juvium = () => (
             <Text padding="50px"
                   fontSize="36px">Why should you offer SMARTJuvium?</Text>
             <Flex>
-                <Box position="relative">
+                <Flex position="relative">
                     <Image src="https://9agdi3buzu824rjcn3d2r89q-wpengine.netdna-ssl.com/wp-content/uploads/2020/10/Smart-Juvium-Annotated-RKL-machine.jpg"/>
-                    <Box position="absolute"
-                         top="0"
-                         borderRadius="100px"
-                         color="#fff"
-                         bgColor="#bd204c"
-                         w="40px"
-                         h="40px"
-                         display="flex"
-                         justifyContent="center"
-                         alignItems="center"
-                         top="32%"
-                         left="53%">1</Box>
-                    <Box position="absolute"
-                         bottom="28%"
-                         left="50%"
-                         borderRadius="100px"
-                         color="#fff"
-                         bgColor="#bd204c"
-                         w="40px"
-                         h="40px"
-                         display="flex"
-                         justifyContent="center"
-                         alignItems="center">2</Box>
-                    <Box position="absolute"
-                         top="19%"
-                         left="10%"
-                         borderRadius="100px"
-                         color="#fff"
-                         bgColor="#bd204c"
-                         w="40px"
-                         h="40px"
-                         display="flex"
-                         justifyContent="center"
-                         alignItems="center">3</Box>
-                </Box>
-                <Box position="relative">
+                    <div className="blob one">1</div>
+                    <div className="blob two">2</div>
+                    <div className="blob three">3</div>
+                </Flex>
+                <Flex position="relative">
                     <Image src="https://9agdi3buzu824rjcn3d2r89q-wpengine.netdna-ssl.com/wp-content/uploads/2020/10/Smart-Juvium-Annotated-RKL-detail.jpg"/>
-                    <Box position="absolute"
-                         top="32%"
-                         left="26%"
-                         borderRadius="100px"
-                         color="#fff"
-                         bgColor="#bd204c"
-                         w="40px"
-                         h="40px"
-                         display="flex"
-                         justifyContent="center"
-                         alignItems="center">4</Box>
-                    <Box position="absolute"
-                         bottom="35%"
-                         left="30%"
-                         borderRadius="100px"
-                         color="#fff"
-                         bgColor="#bd204c"
-                         w="40px"
-                         h="40px"
-                         display="flex"
-                         justifyContent="center"
-                         alignItems="center">5</Box>
-                    <Box position="absolute"
-                         bottom="18%"
-                         left="20%"
-                         borderRadius="100px"
-                         color="#fff"
-                         bgColor="#bd204c"
-                         w="40px"
-                         h="40px"
-                         display="flex"
-                         justifyContent="center"
-                         alignItems="center">6</Box>
-                </Box>
+                    <div className="blob four">4</div>
+                    <div className="blob five">5</div>
+                    <div className="blob six">6</div>
+                </Flex>
             </Flex>
         </Flex>
+
+        <Box>
+            <Text textAlign="center"
+                  fontSize="36px"
+                  marginBottom="30px">Virtual Tour Video</Text>
+            <AspectRatio maxW="1240px" ratio={16 / 9} marginLeft="auto" marginRight="auto">
+                <iframe
+                    title="naruto"
+                    src="https://www.youtube.com/embed/QhBnZ6NPOY0"
+                    allowFullScreen
+                />
+            </AspectRatio>
+        </Box>
+
+        <Flex flexDirection="column"
+              alignItems="center">
+            <Text fontSize="36px"
+                  marginBottom="30px">Fractional Laser Resurfacing</Text>
+            <Flex>
+                <Flex flexDirection="column"
+                      alignItems="center">
+                    <Text maxWidth="274px"
+                          fontSize="20px">Fractional delivery of MTZ’s (Multiple Treatment Zones)</Text>
+                    <Image src="https://9agdi3buzu824rjcn3d2r89q-wpengine.netdna-ssl.com/wp-content/uploads/2020/10/Artboard-5.png"/>
+                </Flex>
+                <Flex flexDirection="column"
+                      alignItems="center"> 
+                    <Text maxWidth="447px"
+                          fontSize="20px"
+                          textAlign="center">Rapid collagen production, skin rejuvenation and dermal repair</Text>
+                    <Image src="https://9agdi3buzu824rjcn3d2r89q-wpengine.netdna-ssl.com/wp-content/uploads/2020/10/Artboard-5-copy.png"/>
+                </Flex>
+            </Flex>
+        </Flex>
+        <Flex bgColor="#3271B8"
+              flexDirection="column"
+              alignItems="center"
+              height="400px">
+            <Text color="#fff"
+                  fontSize="36px">KEY FEATURES</Text>
+            <Flex>
+                <Image padding="30px" src="https://9agdi3buzu824rjcn3d2r89q-wpengine.netdna-ssl.com/wp-content/uploads/2020/11/downtime-icon1.png"/>
+                <Image padding="30px" src="https://9agdi3buzu824rjcn3d2r89q-wpengine.netdna-ssl.com/wp-content/uploads/2020/11/fractional-icon1.png"/>
+                <Image padding="30px" src="https://9agdi3buzu824rjcn3d2r89q-wpengine.netdna-ssl.com/wp-content/uploads/2020/11/skin-icon1.png"/>
+                <Image padding="30px" src="https://9agdi3buzu824rjcn3d2r89q-wpengine.netdna-ssl.com/wp-content/uploads/2020/11/cryo-icon1.png"/>
+                <Image padding="30px" src="https://9agdi3buzu824rjcn3d2r89q-wpengine.netdna-ssl.com/wp-content/uploads/2020/11/scanning-icon1.png"/>
+            </Flex>
+        </Flex>
+    
         <Guarantee/>
         <Box>
             <Image src="https://9agdi3buzu824rjcn3d2r89q-wpengine.netdna-ssl.com/wp-content/uploads/2020/09/Testimonials-Background.jpg"/>

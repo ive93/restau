@@ -240,3 +240,85 @@ a {
 .custom-shape-divider-top-1619762077 .shape-fill {
   fill: #FFFFFF;
 }
+
+
+.blob{
+  position: absolute;
+  border-radius: 100px;
+  color: #fff;
+  background-color: #bd204c;
+  width: 40px;
+  height: 40px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.blob.one {
+	background: rgba(189, 32, 76, 1);
+	box-shadow: 0 0 0 0 rgba(189, 32, 76, 1);
+	animation: pulse-red 2s infinite;
+  left: 53%;
+  top: 32%;
+}
+.blob.two {
+	background: rgba(189, 32, 76, 1);
+	box-shadow: 0 0 0 0 rgba(189, 32, 76, 1);
+	animation: pulse-red 2s infinite;
+  bottom: 28%;
+  left: 50%;
+}
+.blob.three {
+	background: rgba(189, 32, 76, 1);
+	box-shadow: 0 0 0 0 rgba(189, 32, 76, 1);
+	animation: pulse-red 2s infinite;
+  left: 10%;
+  top: 19%;
+}
+.blob.four {
+	background: rgba(189, 32, 76, 1);
+	box-shadow: 0 0 0 0 rgba(189, 32, 76, 1);
+	animation: pulse-red 2s infinite;
+  left: 26%;
+  top: 32%;
+}
+.blob.five {
+	background: rgba(189, 32, 76, 1);
+	box-shadow: 0 0 0 0 rgba(189, 32, 76, 1);
+	animation: pulse-red 2s infinite;
+  bottom: 35%;
+  left: 30%;
+}
+.blob.six {
+	background: rgba(189, 32, 76, 1);
+	box-shadow: 0 0 0 0 rgba(189, 32, 76, 1);
+	animation: pulse-red 2s infinite;
+  bottom: 18%;
+  left: 20%;
+}
+
+@keyframes pulse-red {
+	0% {
+		transform: scale(0.95);
+		box-shadow: 0 0 0 0 rgba(189, 32, 76, 0.7);
+	}
+	
+	70% {
+		transform: scale(1);
+		box-shadow: 0 0 0 10px rgba(189, 32, 76, 0.3);
+	}
+	
+	100% {
+		transform: scale(0.95);
+		box-shadow: 0 0 0 0 rgba(189, 32, 76, 0);
+	}
+}
