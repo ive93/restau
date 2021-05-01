@@ -1,7 +1,8 @@
 import {
 Flex,
 Button,
-Tooltip
+Tooltip,
+Link
 } from "@chakra-ui/react";
 
 
@@ -11,7 +12,7 @@ Tooltip
       justifyContent="space-evenly"
       alignItems="center"
       position="fixed"
-      zIndex="1">
+      zIndex="2">
 <img src="https://9agdi3buzu824rjcn3d2r89q-wpengine.netdna-ssl.com/wp-content/uploads/2020/09/SMARTGroup-Logo-Blue.png"/>
   <ul className="top-level-menu">
       <li className="underline"><a href="/">Home</a></li>
@@ -19,7 +20,12 @@ Tooltip
           <a href="#">Products</a>
           <ul className="second-level-menu">
               <li>
-                  <a href="#">Diode</a>
+                  <Link href="#"
+                  bgColor="#fff"
+                  boxShadow="inset 0 -3px 4px 0 #02010130"
+                  w="100%"
+                  textAlign="center"
+                  >Diode</Link>
                   <ul className="third-level-menu">
                       <li><a href="#">Intro</a></li>
                       <li><a href="#">Features & Benefits</a></li>
@@ -29,7 +35,12 @@ Tooltip
                   </ul>
               </li>
               <li>
-                  <a href="#">Juvium</a>
+                  <Link href="/juvium"
+                  bgColor="#fff"
+                  boxShadow="inset 0 -3px 4px 0 #02010130"
+                  w="100%"
+                  textAlign="center"
+                  >Juvium</Link>
                   <ul className="third-level-menu">
                       <li><a href="#">Intro</a></li>
                       <li><a href="#">Features & Benefits</a></li>
@@ -39,7 +50,12 @@ Tooltip
                   </ul>
               </li>
               <li>
-                  <a href="#">M Tone XL</a>
+                  <Link href="#"
+                  bgColor="#fff"
+                  boxShadow="inset 0 -3px 4px 0 #02010130"
+                  w="100%"
+                  textAlign="center"                  
+                  >M Tone XL</Link>
                   <ul className="third-level-menu">
                       <li><a href="#">Intro</a></li>
                       <li><a href="#">Features & Benefits</a></li>
@@ -49,7 +65,12 @@ Tooltip
                   </ul>
               </li>
               <li>
-                  <a href="#">Multi Lasi</a>
+                  <Link href="#"
+                  bgColor="#fff"
+                  boxShadow="inset 0 -3px 4px 0 #02010130"
+                  w="100%"
+                  textAlign="center"                  
+                  >Multi Lasi</Link>
                   <ul className="third-level-menu">
                       <li><a href="#">Intro</a></li>
                       <li><a href="#">Features & Benefits</a></li>

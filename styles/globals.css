@@ -90,6 +90,8 @@ a {
 .second-level-menu > li:hover { background: #CCCCCC; }
 .third-level-menu > li:hover { background: #CCCCCC; }*/
 
+
+
 .top-level-menu li:hover > ul
 {
     /* On hover, display the next level's menu */
@@ -215,4 +217,26 @@ a {
   -ms-flex-align: center;
   -webkit-align-items: center;
   align-items: center;
+}
+
+
+
+.custom-shape-divider-top-1619762077 {
+  position: absolute;
+  top: 0;
+  right: 37%;
+  width: 26%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.custom-shape-divider-top-1619762077 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 73px;
+}
+
+.custom-shape-divider-top-1619762077 .shape-fill {
+  fill: #FFFFFF;
 }

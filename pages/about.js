@@ -8,7 +8,8 @@ import {
     } from "@chakra-ui/react";
 import Separator from '../components/Separator';
 import Carrousel from '../components/Carrousel';
-import Guarantee from '../components/Guarantee'
+import Guarantee from '../components/Guarantee';
+import { FaQuoteLeft } from 'react-icons/fa';
 
   const About = () => (
 <section>
@@ -82,9 +83,11 @@ import Guarantee from '../components/Guarantee'
     </Flex>
     <Guarantee/>
     <Box marginTop="40px">
-        <Box>
-            <Image scr="../static/quote.png"/>
-        </Box>
+        <Flex justifyContent="center"
+              fontSize="50px"
+              marginBottom="30px">
+            <FaQuoteLeft/>
+        </Flex>
         <Flex justifyContent="center">
             <Text textAlign="center"
                 fontSize="30px"
