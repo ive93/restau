@@ -7,18 +7,15 @@ import {
   Image,
   AspectRatio,
   Table,
-  Thead,
   Tbody,
-  Tfoot,
   Tr,
-  Th,
   Td,
-  TableCaption,
 } from "@chakra-ui/react";
 import Separator from "../components/Separator";
 import { AiFillCheckCircle } from "react-icons/ai";
 import Guarantee from "../components/Guarantee";
 import FAQs from "../components/FAQs";
+import Spec from "../components/Spec";
 
 const Juvium = () => (
   <section>
@@ -179,18 +176,62 @@ const Juvium = () => (
       <Flex>
         <Flex position="relative">
           <Image src="https://9agdi3buzu824rjcn3d2r89q-wpengine.netdna-ssl.com/wp-content/uploads/2020/10/Smart-Juvium-Annotated-RKL-machine.jpg" />
-          <div className="blob one">1</div>
-          <div className="blob two">2</div>
-          <div className="blob three">3</div>
+          <Tooltip
+            hasArrow
+            label="Non ablative fractional delivery"
+            closeDelay={500}
+            bg="#bd204c"
+          >
+            <div className="blob one">1</div>
+          </Tooltip>
+          <Tooltip
+            hasArrow
+            label="Non ablative fractional delivery"
+            closeDelay={500}
+            bg="#bd204c"
+          >
+            <div className="blob two">2</div>
+          </Tooltip>
+          <Tooltip
+            hasArrow
+            label="Non ablative fractional delivery"
+            closeDelay={500}
+            bg="#bd204c"
+          >
+            <div className="blob three">3</div>
+          </Tooltip>
         </Flex>
         <Flex position="relative">
           <Image src="https://9agdi3buzu824rjcn3d2r89q-wpengine.netdna-ssl.com/wp-content/uploads/2020/10/Smart-Juvium-Annotated-RKL-detail.jpg" />
-          <div className="blob four">4</div>
-          <div className="blob five">5</div>
-          <div className="blob six">6</div>
+          <Tooltip
+            hasArrow
+            label="Non ablative fractional delivery"
+            closeDelay={500}
+            bg="#bd204c"
+          >
+            <div className="blob four">4</div>
+          </Tooltip>
+          <Tooltip
+            hasArrow
+            label="Non ablative fractional delivery"
+            closeDelay={500}
+            bg="#bd204c"
+          >
+            <div className="blob five">5</div>
+          </Tooltip>
+          <Tooltip
+            hasArrow
+            label="Non ablative fractional delivery"
+            closeDelay={500}
+            bg="#bd204c"
+          >
+            <div className="blob six">6</div>
+          </Tooltip>
         </Flex>
       </Flex>
     </Flex>
+
+    <Spec />
 
     <Box>
       <Text textAlign="center" fontSize="36px" marginBottom="30px">
