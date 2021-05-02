@@ -5,11 +5,12 @@ import {
     Box,
     Text,
     Image,
-    AspectRatio
+    AspectRatio,
     } from "@chakra-ui/react";
 import Separator from '../components/Separator';
 import { AiFillCheckCircle } from 'react-icons/ai';
 import Guarantee from '../components/Guarantee';
+import FAQs from '../components/FAQs';
 
 const Juvium = () => (
     <section>
@@ -23,7 +24,7 @@ const Juvium = () => (
             <Box position="absolute"
                 top="33%"
                 left="12%">
-                <Text maxWidth="530px"
+                <Text maxwidth="530px"
                       fontSize="40px">BE SMART, THINK SMART, WORK SMART</Text>
                 <Text fontSize="20px"
                       fontWeight="200">Discover Fast, Pain-Free Results
@@ -205,7 +206,8 @@ const Juvium = () => (
         <Flex bgColor="#3271B8"
               flexDirection="column"
               alignItems="center"
-              height="400px">
+              height="400px"
+              justifyContent="center">
             <Text color="#fff"
                   fontSize="36px">KEY FEATURES</Text>
             <Flex>
@@ -221,6 +223,8 @@ const Juvium = () => (
         <Box>
             <Image src="https://9agdi3buzu824rjcn3d2r89q-wpengine.netdna-ssl.com/wp-content/uploads/2020/09/Testimonials-Background.jpg"/>
         </Box>
+        <FAQs/>
+
     </section>
 )
 
